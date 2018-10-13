@@ -95,12 +95,12 @@
     "minimist": "^1.2.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-redux": "^5.0.5",
+    "react-redux": "^5.0.6",
     "redux": "^3.7.2",
     "redux-localstorage": "rc",
     "redux-localstorage-filter": "^0.1.1",
     "styled-jsx": "0.5.2",
-    "styled-jsx-postcss": "git+https://github.com/timsuchanek/styled-jsx-postcss#build3",
+    "styled-jsx-postcss": "0.2.0",
     "validator": "^8.0.0"
   },
   "devDependencies": {
