@@ -25,7 +25,9 @@
     "stats": "NODE_ENV=production webpack --config webpack.library.js  --profile --json > stats.json",
     "test": "npm run lint",
     "precommit": "lint-staged",
-    "prettier": "prettier --single-quote --no-semi --trailing-comma all --write '*.{js,ts,tsx}' 'src/**/*.{js,ts,tsx}'"
+    "prettier": "prettier --single-quote --no-semi --trailing-comma all --write '*.{js,ts,tsx}' 'src/**/*.{js,ts,tsx}'",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
@@ -101,7 +103,8 @@
     "redux-localstorage-filter": "^0.1.1",
     "styled-jsx": "0.5.2",
     "styled-jsx-postcss": "git+https://github.com/timsuchanek/styled-jsx-postcss#build3",
-    "validator": "^8.0.0"
+    "validator": "^8.0.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.0",
@@ -155,5 +158,6 @@
     "webpack-bundle-analyzer": "^2.8.3",
     "webpack-dev-server": "^2.6.1",
     "webpack-uglify-parallel": "^0.1.3"
-  }
+  },
+  "snyk": true
 }
