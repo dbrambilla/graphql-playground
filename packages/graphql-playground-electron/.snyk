@@ -1,0 +1,30 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - react-redux > lodash:
+        patched: '2020-05-01T01:00:09.897Z'
+    - redux > lodash:
+        patched: '2020-05-01T01:00:09.897Z'
+    - graphcool-styles > html-webpack-plugin > lodash:
+        patched: '2020-05-01T01:00:09.897Z'
+    - styled-jsx > babel-traverse > lodash:
+        patched: '2020-05-01T01:00:09.897Z'
+    - styled-jsx-postcss > babel-traverse > lodash:
+        patched: '2020-05-01T01:00:09.897Z'
+    - graphcool-tmp-ui > graphcool-styles > html-webpack-plugin > lodash:
+        patched: '2020-05-01T01:00:09.897Z'
+    - graphcool-styles > webpack-dev-server > http-proxy-middleware > lodash:
+        patched: '2020-05-01T01:00:09.897Z'
+    - styled-jsx > babel-traverse > babel-types > lodash:
+        patched: '2020-05-01T01:00:09.897Z'
+    - styled-jsx-postcss > babel-traverse > babel-types > lodash:
+        patched: '2020-05-01T01:00:09.897Z'
+    - styled-jsx-postcss > styled-jsx > babel-traverse > lodash:
+        patched: '2020-05-01T01:00:09.897Z'
+    - graphcool-tmp-ui > graphcool-styles > webpack-dev-server > http-proxy-middleware > lodash:
+        patched: '2020-05-01T01:00:09.897Z'
+    - styled-jsx-postcss > styled-jsx > babel-traverse > babel-types > lodash:
+        patched: '2020-05-01T01:00:09.897Z'
