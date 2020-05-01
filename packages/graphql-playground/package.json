@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "start-middleware": "node scripts/start.middleware.js",
-    "prepublish": "yarn build",
+    "prepublish": "yarn run snyk-protect && yarn build",
     "copy-styles": "cat src/styles/*.css > playground.css",
     "build": "rm -rf lib; yarn build-app; yarn build-middleware-app; yarn build-package; yarn build-middleware; yarn copy-styles",
     "build-package": "rm -rf lib; tsc -p tsconfig.build.json --noUnusedLocals --noUnusedParameters; babel lib -d lib; cp -r ./src/assets/ ./lib/assets/; cd lib && rm -rf *.jsx;",
@@ -18,7 +18,8 @@
     "graphql-faker": "graphql-faker ./tests/schema.faker.graphql",
     "lint": "tslint \"src/**/*.ts{,x}\"",
     "precommit": "lint-staged",
-    "prettier": "prettier --single-quote --no-semi --trailing-comma all --write *.{ts,tsx} 'src/**/*.{ts,tsx}'"
+    "prettier": "prettier --single-quote --no-semi --trailing-comma all --write *.{ts,tsx} 'src/**/*.{ts,tsx}'",
+    "snyk-protect": "snyk protect"
   },
   "files": [
     "build",
@@ -126,7 +127,8 @@
     "rxjs": "^5.0.3",
     "seamless-immutable": "^7.0.1",
     "subscriptions-transport-ws": "^0.8.1",
-    "svgo-loader": "^1.1.2"
+    "svgo-loader": "^1.1.2",
+    "snyk": "^1.316.1"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
@@ -165,5 +167,6 @@
       "js"
     ],
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$"
-  }
+  },
+  "snyk": true
 }
