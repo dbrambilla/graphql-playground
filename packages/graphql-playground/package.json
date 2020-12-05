@@ -111,7 +111,7 @@
     "postcss-modules": "^0.6.4",
     "raw-loader": "^0.5.1",
     "react": "^15.4.2",
-    "react-addons-shallow-compare": "^15.6.0",
+    "react-addons-shallow-compare": "^15.6.3",
     "react-codemirror": "^1.0.0",
     "react-copy-to-clipboard": "^5.0.0",
     "react-dom": "^15.4.2",
